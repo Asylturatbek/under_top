@@ -1,0 +1,9 @@
+textarea {
+    height: 8rem !important;
+}
+
+.loading {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}

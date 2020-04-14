@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Review Twit</title>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Book Reviews</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">About</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="row">
+    <form class="col s10 offset-s1">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Name" name="name">
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate" placeholder="telephone" name="telephone">
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">add_a_photo</i>
+          <input id="icon_telephone" type="tel" class="validate" placeholder="Photo_Url" name="photo">
+        </div>
+
+	  	<div class="input-field col s12">
+	  	  <i class="material-icons prefix">mode_edit</i>
+	  	  <textarea id="textarea1" class="materialize-textarea" rows="5" oninput="changedValue()" name="description"></textarea>
+	  	  <label for="textarea1">Description</label>
+	  	</div>
+	  </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+	    <i class="material-icons right">send</i>
+	  </button>
+
+    </form>
+  </div>
+
+		<div class='loading'>
+		  <img src="https://i.gifer.com/VYrX.gif">
+		</div>
+
+
+
+
+  <script type="text/javascript" src="client.js"></script>
+</body>
+</html>
