@@ -60,6 +60,7 @@ function listBooks(url) {
     .then(response => response.json())
     .then(books => {
         console.log(books)
+        imageCards.innerHTML = ''
         books.forEach((item, index) => {
            imageCards.innerHTML += `
             <div class="col s12 m4">
